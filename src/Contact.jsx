@@ -5,7 +5,7 @@ import logo from './logo.svg';
 class Contact extends React.Component {
     render() {
         return (
-            <div className="App">
+            <div className="Contact">
                 It's Me!
             </div>
             

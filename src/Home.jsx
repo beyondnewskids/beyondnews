@@ -5,7 +5,7 @@ import logo from './logo.svg';
 class Home extends React.Component {
     render() {
         return (
-            <div className="App">
+            <div className="Contact">
                 Hello World!
             </div>
             
