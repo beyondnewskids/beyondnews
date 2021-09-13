@@ -7,7 +7,9 @@ import Contact from './Contact';
 import Home from './Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 class App extends React.Component {
+  
   render() {
       return (
         <div className="App">
@@ -17,7 +19,7 @@ class App extends React.Component {
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 					  <Nav className="me-auto">
-						<Nav.Link href="#">Home</Nav.Link>
+						<Nav.Link href="#/">Home</Nav.Link>
 						<Nav.Link href="#about">About</Nav.Link>
 						<Nav.Link href="#contact">Contact</Nav.Link>
 						</Nav>
