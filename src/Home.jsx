@@ -14,7 +14,6 @@ class Home extends React.Component {
 		return audioClips.map((soundObj, index) => {
 			  return (<div>{soundObj.label}<br/><ReactAudioPlayer
 					  src={soundObj.sound}
-					  autoPlay
 					  controls
 					/></div>)
 			})	
