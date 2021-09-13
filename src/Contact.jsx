@@ -6,7 +6,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="Contact">
-                It's Me!
+                It's Still Me!
             </div>
             
         );
