@@ -2,13 +2,13 @@ import React from 'react';
 
 
 
-class About extends React.Component {
+class Science extends React.Component {
     
     render() {
         return (
             
-                <div className="About">
-					It's Me!
+                <div className="Science">
+					Loads of Science for Kids
 				</div>
             
         )
@@ -17,4 +17,4 @@ class About extends React.Component {
 
 
 
-export default About;
+export default Science;

@@ -1,31 +1,38 @@
 import './App.css';
 import React from 'react';
+import {Nav} from 'react-bootstrap';
+import NewsContext from './NewsContext';
+
 import ReactAudioPlayer from 'react-audio-player';
-
-
-const audioClips = [
-{sound: "https://dl.prokerala.com/downloads/ringtones/files/mp3/emergency-3087.mp3", label: "September 12"},
-{sound: "https://dl.prokerala.com/downloads/ringtones/files/mp3/horn-23360.mp3", label: "September 13"}
-]
+import ReactPlayer from 'react-player/youtube';
 
 class Home extends React.Component {
-
-	RenderButtonSound = () => {
-		return audioClips.map((soundObj, index) => {
-			  return (<div>{soundObj.label}<br/><ReactAudioPlayer
-					  src={soundObj.sound}
-					  controls
-					/></div>)
-			})	
-	}
-  
+	static contextType = NewsContext;
+	
+	
     render() {
-        return (
+		const newsItems = this.context;
+		console.log(newsItems);
+		const newsItem = newsItems[0];
+		console.log(newsItem);
+		return (
 		<div className="Home">
-            <h2>Our Podcasts</h2>
-			{this.RenderButtonSound()}
-			
-			
+            <h2> Welcome to Beyond News</h2><br/>
+			<h3>Lorem Ipsum </h3><br/>
+			<h3>Latest News</h3><br/><br/>
+			{newsItem.type === "audio" ? 
+						<ReactAudioPlayer
+							  src={newsItem.link}
+							  controls
+							  controlsList={"nodownload"}
+							/>
+					 : 
+					  <ReactPlayer
+							  url={newsItem.link}
+							  controls
+							  controlsList={"nodownload"}
+			/>}
+			<br/><br/>For more news head to <Nav.Link href="#news">News</Nav.Link>
             </div>
         );
     }
