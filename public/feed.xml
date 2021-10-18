@@ -1,0 +1,25 @@
+<rss version="2.0">
+  <channel>
+    <title>Beyond News Kids</title>
+    <link>https://beyondnewskids.github.io/beyondnews/#/news</link>
+    <description>Beyond News Kids Podcast
+    </description>
+  <copyright>Copyright 2021 Kirti Phadke</copyright>
+<docs>https://beyondnewskids.github.io/beyondnews/tech/rss</docs>
+<language>en-us</language>
+<managingEditor>beyondnewskids@gmail.com</managingEditor>
+<image>
+<url>https://doubekmedical.com/wp-content/uploads/2020/03/covid-19-pictures-256x256.jpg</url>
+<description>Beyond News Kids Podcast</description>
+<width>48</width>
+<height>48</height>
+</image>
+<item>
+<title>POD 1</title>
+<description><b>POD 1</b></description>
+<link>https://dl.prokerala.com/downloads/ringtones/files/mp3/emergency-3087.mp3</link>
+<pubDate>12 Sep	2021</pubDate>
+</item>
+
+</channel>
+</rss>
